@@ -1,0 +1,155 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(120deg, #e2c35d, #d88771);
+	color: white;
+	min-height: 100vh;
+}
+
+.wrappper {
+}
+.container {
+	max-width: 1240px;
+	padding: 20px;
+	margin: 0 auto;
+}
+.wrapper__title {
+	font-size: 36px;
+	text-align: center;
+}
+
+.wrapper__title,
+.wrapper__form {
+	min-height: 20vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper__form input {
+	background-color: white;
+	color: black;
+	border-radius: 5px 0px 0px 5px;
+}
+
+.wrapper__form input,
+.wrapper__form button {
+	padding: 10px 15px;
+	font-size: 18px;
+	border: none;
+}
+
+.wrapper__btn {
+	background-color: white;
+	color: #d88771;
+	border-radius: 0px 5px 5px 0px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.wrapper__btn:hover {
+	background-color: #d88771;
+	color: white;
+}
+
+.todo-container__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px 0;
+}
+.todo-container__item {
+	min-width: 40%;
+	min-height: 46px;
+	background-color: white;
+	color: black;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 5px;
+	overflow: hidden;
+	transition: all 0.25s ease-in-out;
+}
+
+.todo-container__text {
+	flex: 1;
+	padding: 0 10px;
+}
+
+.todo-container__complete,
+.todo-container__btn {
+	background-color: #ff6f47;
+	color: white;
+	width: 46px;
+	height: 46px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.todo-container__complete {
+	background-color: rgb(73, 204, 73);
+}
+
+.fas {
+	pointer-events: none;
+}
+
+.completed {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.fall {
+	transform: translateY(8rem) rotateZ(20deg);
+	opacity: 0;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	border: none;
+}
+
+.select {
+	color: black;
+	margin: 16px;
+	position: relative;
+	overflow: hidden;
+}
+
+select {
+	width: 180px;
+	height: 100%;
+	padding: 10px;
+	font-size: 18px;
+	border: none;
+	background-color: white;
+	color: #ff6f47;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.25s ease-in-out;
+}
+
+.select::after {
+	content: '\25BC';
+	position: absolute;
+	background-color: #ff6f47;
+	top: 0;
+	right: 0;
+	color: white;
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	transition: all 0.25s ease-in-out;
+}
+
+.select:hover::after {
+	background-color: white;
+	color: #ff6f47;
+}
